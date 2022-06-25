@@ -113,7 +113,7 @@ a:hover {
 .tech-container .tech-img {
   border: 2px solid var(--bg-btn);
   border-radius: 20px;
-  padding: 1%;
+  padding: 2%;
   height: 200px;
   width: 200px;
 }
