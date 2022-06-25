@@ -13,7 +13,7 @@
   --px: 10%;
   --normal: 1.2rem;
   --bg-dark: #1f2937;
-  --bg-btn: #079ffd;
+  --bg-btn: #3882f6;
 }
 
 /* header section */
@@ -21,9 +21,10 @@
 .logo {
   font-family: cursive;
   font-size: 2.5rem;
+  cursor: pointer;
 }
 
-#header {
+.header {
   display: flex;
   background-color: var(--bg-dark);
   color: white;
@@ -51,9 +52,12 @@ a {
   color: white;
 }
 
+a:hover{
+  color: var(--bg-btn);
+}
 /* hero section */
 
-#hero {
+.hero {
   display: flex;
   background-color: var(--bg-dark);
   padding: var(--py) var(--px);
@@ -71,22 +75,20 @@ a {
   width: 50%;
 }
 
-#hero h1 {
+.hero h1 {
   font-size: var(--heading-fs);
   font-weight: bolder;
 }
 
-#hero p {
+.hero p {
   font-size: var(--normal);
 }
 
 .react-img {
-  max-width: 100%;
-  height: auto;
   background-color: white;
 }
 
-#hero .btn-sign-in {
+.hero .btn-sign-in {
   padding: 8px 32px;
   margin: 2% 0;
   background-color: var(--bg-btn);
@@ -96,6 +98,37 @@ a {
   border: 1px solid white;
 }
 
+/* tech section */
+
+.tech{
+  padding: var(--py) 0;
+}
+.tech-container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.tech-container .tech-img{
+  border: 2px solid var(--bg-btn);
+  border-radius: 20px;
+  padding: 1%;
+  height: 200px;
+  width: 200px;
+}
+.tech-container div{
+  flex: 1;
+}
+.tech .heading{
+  font-size: var(--heading-fs);
+  margin-bottom: 48px;
+}
+
+.tech-container .text{
+  font-size: var(--normal);
+  line-height: 1.5;
+}
 /* utility classes */
 
 .text-center {
@@ -103,4 +136,14 @@ a {
 }
 .text-white {
   color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.btn:hover{
+  background-color: #fff;
+  color: var(--bg-dark);
+  font-weight: bold;
+  cursor: pointer;
 }
