@@ -142,8 +142,6 @@ img {
   height: auto;
 }
 .btn:hover{
-  background-color: #fff;
-  color: var(--bg-dark);
-  font-weight: bold;
+  background-color: #1b6ff8;
   cursor: pointer;
 }
